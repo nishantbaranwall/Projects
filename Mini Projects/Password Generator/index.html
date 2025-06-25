@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+
+    <div class="inputBox">
+      <input type="text" class="passbox" readonly placeholder="Your password here" />
+    </div>
+
+    <div class="lengthRow">
+      Password Length: <span class="lengthValue">12</span>
+    </div>
+    <input type="range" class="range" min="6" max="30" value="12" />
+
+    <div class="options">
+      <label><input type="checkbox" class="lowercase" checked> include lowercase (a-z)</label>
+      <label><input type="checkbox" class="uppercase" checked> include uppercase (A-Z)</label>
+      <label><input type="checkbox" class="numbers" checked> include numbers (0-9)</label>
+      <label><input type="checkbox" class="symbols" checked> include symbols (!@#$...)</label>
+    </div>
+
+    <button class="generateBtn">Generate Password</button>
+  </div>
+
+  <div class="branding">Made by Nishant</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
