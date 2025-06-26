@@ -93,3 +93,17 @@ button.operator:hover {
   background-color: #2a2a2a;
   box-shadow: 0 0 8px #9370DB55;
 }
+
+.branding {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: #00f5ff88;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.branding:hover {
+  opacity: 1;
+}
