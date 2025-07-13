@@ -3,7 +3,13 @@ body {
   font-family: 'Courier New', monospace;
   color: #00ff00;
   text-align: center;
-  margin-top: 100px;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #display {
@@ -13,6 +19,8 @@ body {
   text-shadow: 0 0 8px #00ff00;
   margin-bottom: 40px;
   animation: flicker 1.5s infinite;
+  word-spacing: 4px;
+  letter-spacing: 1px;
 }
 
 button {
@@ -42,4 +50,16 @@ button:active {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.92; }
   90% { opacity: 0.95; }
+}
+
+@media (max-width: 450px) {
+  #display {
+    font-size: 36px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px 20px;
+    margin: 8px;
+  }
 }

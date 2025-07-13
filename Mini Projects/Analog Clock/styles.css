@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #0d1117;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
 .clock {
-  width: 300px;
-  height: 300px;
+  width: 90vmin;
+  height: 90vmin;
+  max-width: 320px;
+  max-height: 320px;
   border: 8px solid #58a6ff;
   border-radius: 50%;
   position: relative;
@@ -26,19 +35,19 @@ body {
 
 .hour {
   width: 6px;
-  height: 70px;
+  height: 23%;
   background: #f78166;
 }
 
 .minute {
   width: 4px;
-  height: 100px;
+  height: 32%;
   background: #8e44ad;
 }
 
 .second {
   width: 2px;
-  height: 120px;
+  height: 40%;
   background: #58a6ff;
 }
 
@@ -55,23 +64,21 @@ body {
 
 .number {
   position: absolute;
+  top: 46%;
+  left: 46%;
+  transform: rotate(calc(30deg * var(--i))) translateY(-130px) rotate(calc(-30deg * var(--i)));
+  transform-origin: center;
   color: #c9d1d9;
   font-family: 'Orbitron', monospace;
   font-size: 20px;
   font-weight: bold;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) 
-             rotate(calc(30deg * var(--i) - 90deg)) 
-             translate(130px) 
-             rotate(calc(-30deg * var(--i) + 90deg));
 }
 
 .branding {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  font-size: 18px;
+  font-size: 12px;
   color: #00f5ff88;
   opacity: 0.7;
   transition: opacity 0.3s ease;

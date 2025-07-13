@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>JS Toolkit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       background-color: #0d0d0d;
       color: #00ff00;
       font-family: 'Courier New', monospace;
-      padding: 40px;
+      padding: 40px 20px;
       text-align: center;
+      margin: 0;
     }
 
     h1 {
@@ -71,6 +73,7 @@
       font-size: 1.1rem;
       margin-top: 10px;
     }
+
     .footer {
       margin-top: 60px;
       color: #00ff00;
@@ -80,10 +83,41 @@
       border-top: 1px dashed #00ff00;
       padding-top: 15px;
     }
+
     .footer strong {
       color: #00ff00;
     }
 
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .projects {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .card {
+        width: 90%;
+      }
+
+      .emoji {
+        font-size: 30px;
+      }
+
+      .label {
+        font-size: 16px;
+      }
+
+      .terminal-line {
+        font-size: 1rem;
+      }
+
+      .footer {
+        font-size: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -91,7 +125,7 @@
   <div class="terminal-line">Welcome, visitor. Choose your utility tool:</div>
 
   <div class="projects">
-    <a class="card" href="Calci/abcd.html">
+    <a class="card" href="Calci/index.html">
       <div class="emoji">🧮</div>
       <div class="label">Calculator</div>
     </a>
@@ -108,7 +142,8 @@
       <div class="label">Analog Clock</div>
     </a>
   </div>
-    <footer class="footer">
+
+  <footer class="footer">
     <p>🛠️ Made by <strong>Nishant Baranwal</strong></p>
   </footer>
 </body>

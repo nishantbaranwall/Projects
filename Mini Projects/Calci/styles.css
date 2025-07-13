@@ -11,27 +11,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #0d0d0d; 
+  min-height: 100vh;
+  background: #0d0d0d;
+  padding: 20px;
 }
 
 .calculator {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15); 
-  width: 400px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  width: 100%;
+  max-width: 400px;
 }
 
 .display {
   width: 100%;
   height: 50px;
-  font-size: 26px;
+  font-size: 1.3rem;
   text-align: right;
   margin-bottom: 15px;
   padding: 8px 10px;
-  background: #111; 
-  color: #00ffe7;  
+  background: #111;
+  color: #00ffe7;
   border: none;
   border-radius: 6px;
 }
@@ -44,11 +46,11 @@ body {
 
 button {
   padding: 15px;
-  font-size: 20px;
+  font-size: 1.1rem;
   cursor: pointer;
-  background-color: #1a1a1a; 
-  color: #00ffe7;          
-  border: 1px solid #00ffe740; 
+  background-color: #1a1a1a;
+  color: #00ffe7;
+  border: 1px solid #00ffe740;
   border-radius: 6px;
   transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
 }
@@ -63,24 +65,24 @@ button:active {
 }
 
 button.equal {
-  background-color: #00ffe7; 
-  color: #0d0d0d;           
+  background-color: #00ffe7;
+  color: #0d0d0d;
 }
 
 button.equal:hover {
-  background-color: #00e6ce; 
+  background-color: #00e6ce;
   box-shadow: 0 0 12px #00ffe780;
 }
 
 button.clear {
-  background-color: #4d0000;  
-  color: #ff4d4d;          
-  border: 1px solid #ff4d4d40; 
+  background-color: #4d0000;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d40;
 }
 
 button.clear:hover {
-  background-color: #660000;  
-  box-shadow: 0 0 8px #ff4d4d40; 
+  background-color: #660000;
+  box-shadow: 0 0 8px #ff4d4d40;
 }
 
 button.operator {
@@ -106,4 +108,20 @@ button.operator:hover {
 
 .branding:hover {
   opacity: 1;
+}
+
+@media (max-width: 500px) {
+  .calculator {
+    padding: 15px;
+  }
+
+  .display {
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1rem;
+  }
 }
