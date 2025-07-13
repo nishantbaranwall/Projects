@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Toolkit</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #00ff00;
+      border-radius: 10px;
+      padding: 20px;
+      width: 220px;
+      text-decoration: none;
+      color: #00ff00;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0, 255, 0, 0.5);
+    }
+
+    .emoji {
+      font-size: 36px;
+      margin-bottom: 10px;
+      filter: brightness(150%);
+    }
+
+    .label {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .blink {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .terminal-line {
+      color: #00ff00;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .footer {
+      margin-top: 60px;
+      color: #00ff00;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      text-align: center;
+      border-top: 1px dashed #00ff00;
+      padding-top: 15px;
+    }
+    .footer strong {
+      color: #00ff00;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>🧠 JS Toolkit <span class="blink">_</span></h1>
+  <div class="terminal-line">Welcome, visitor. Choose your utility tool:</div>
+
+  <div class="projects">
+    <a class="card" href="Calci/abcd.html">
+      <div class="emoji">🧮</div>
+      <div class="label">Calculator</div>
+    </a>
+    <a class="card" href="Password Generator/index.html">
+      <div class="emoji">🔐</div>
+      <div class="label">Password Generator</div>
+    </a>
+    <a class="card" href="Stopwatch/index.html">
+      <div class="emoji">⏱️</div>
+      <div class="label">Stopwatch</div>
+    </a>
+    <a class="card" href="Analog Clock/index.html">
+      <div class="emoji">🕰️</div>
+      <div class="label">Analog Clock</div>
+    </a>
+  </div>
+    <footer class="footer">
+    <p>🛠️ Made by <strong>Nishant Baranwal</strong></p>
+  </footer>
+</body>
+</html>
